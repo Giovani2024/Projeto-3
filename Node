@@ -1,0 +1,26 @@
+### Passo 3: Configuração do Projeto com Node.js
+1. **Iniciar o projeto Node.js**:
+   ```bash
+   npm init -y
+   ```
+2. **Instalar as dependências necessárias**:
+   ```bash
+   npm install express sqlite3 body-parser
+   ```
+
+3. **Executar o servidor**:
+   ```bash
+   node server.js
+   ```
+
+4. **Acessar no navegador**:
+   Abra `http://localhost:3000` no navegador para acessar a interface.
+
+---
+
+### Expansões Possíveis
+1. **Listagem**: Adicionar uma rota para listar registros no frontend.
+2. **Aprimorar API**: Melhorar as respostas da API para incluir validações.
+3. **Hospedagem**: Subir o sistema para um serviço de nuvem como **Heroku**, **Render** ou **AWS**.
+
+Se precisar de algo mais avançado ou personalizar alguma parte, é só me avisar! 🚀[](https://github.com/playlife1/JSNotes/tree/89208f7e8a8f7de3e46f62bbcabb0315f80a6176/Webpack%2FWebpack.md "1")[](https://github.com/bgoonz/web-dev-utils-package/tree/65a7b21c0444f4cbeb3c313a750fb43560047e77/personal-utilities%2Fcopy-2-clip%2FREADME.md "2")
