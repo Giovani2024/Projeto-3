@@ -1,16 +1,25 @@
-document.getElementById('key-form').addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+#### `public/script.js`
+```javascript
+document.getElementById('form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const data = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        key: document.getElementById('key').value,
+    };
 
-    const response = await fetch('/logs', {
+    const response = await fetch('/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
     });
 
-    if (response.ok) {
-        alert('Log registrado com sucesso!');
-        event.target.reset();
-    }
+    const result = await response.json();
+    document.getElementById('response').innerText = result.message;
+
+    // Limpa o formulário
+    e.target.reset();
 });
+```
