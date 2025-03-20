@@ -1,0 +1,26 @@
+### Passo 1: Criação do Frontend
+
+#### `public/index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaves - Controle de Entrada/Saída</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Controle de Chaves</h1>
+    <form id="form">
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="text" id="phone" placeholder="Telefone" required>
+        <input type="text" id="company" placeholder="Empresa" required>
+        <input type="text" id="key" placeholder="Código da Chave" required>
+        <button type="submit">Registrar</button>
+    </form>
+    <div id="response"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
